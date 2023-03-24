@@ -1,5 +1,4 @@
 // import lodash
-// import "./components/HeadingBar.js"
 import "./components/AppBar.js"
 import "./components/TitleBar.js"
 import "./components/SearchBar.js"
