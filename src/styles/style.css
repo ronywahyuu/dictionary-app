@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Lora:ital,wght@1,500&display=swap');*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Lora:ital,wght@0,400;1,500&display=swap');
+body{
+    font-family: 'Lora', serif;
+    font-size: 1rem;
+    /*line-height: 1.5;*/
+    /*color: #333;*/
+}
+
+#searchSection{
+    background: linear-gradient(90.12deg, rgba(20, 139, 92, 0.8) 1.31%, rgba(8, 77, 49, 0.608) 98.1%), url('../images/bg-cover.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+#divider{
+    font-style: italic;
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
