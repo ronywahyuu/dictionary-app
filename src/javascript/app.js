@@ -4,7 +4,6 @@ import "./components/TitleBar.js"
 import "./components/SearchBar.js"
 import "./components/MainResult.js"
 import "./components/MeaningResult.js"
-import axios from "axios";
 import searchAPI from "../helpers/api";
 const App = () => {
 
@@ -37,7 +36,6 @@ const App = () => {
   searchElement.clickEvent = onSubmitSearch
 
 
-  console.log('Hello from app.js')
 }
 
 export default App

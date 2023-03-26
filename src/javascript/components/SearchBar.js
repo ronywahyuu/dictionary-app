@@ -22,7 +22,6 @@ class SearchBar extends HTMLElement {
           type="text"
           id="termSearch"
           placeholder="Search for a term..."
-          value="word"
           class="w-full  rounded-lg border-gray-200 pr-10 shadow-sm sm:text-sm p-3 md:p-5 "
         />
       
