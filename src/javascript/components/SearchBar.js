@@ -1,16 +1,15 @@
 class SearchBar extends HTMLElement {
-
   connectedCallback() {
-    this.render()
+    this.render();
   }
 
   set clickEvent(event) {
-    this._clickEvent = event
-    this.render()
+    this._clickEvent = event;
+    this.render();
   }
 
   get value() {
-    return this.querySelector('#termSearch').value
+    return this.querySelector('#termSearch').value;
   }
 
   render() {
@@ -23,6 +22,7 @@ class SearchBar extends HTMLElement {
           id="termSearch"
           placeholder="Search for a term..."
           class="w-full  rounded-lg border-gray-200 pr-10 shadow-sm sm:text-sm p-3 md:p-5 "
+          required
         />
       
         <span
@@ -34,10 +34,10 @@ class SearchBar extends HTMLElement {
 
         </span>
       </form>
-    `
+    `;
 
-    this.querySelector('#formSearch').addEventListener('submit', this._clickEvent)
+    this.querySelector('#formSearch').addEventListener('submit', this._clickEvent);
   }
 }
 
-customElements.define('search-bar', SearchBar)
+customElements.define('search-bar', SearchBar);

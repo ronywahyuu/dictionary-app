@@ -1,10 +1,6 @@
 class App extends HTMLElement {
-  constructor() {
-    super()
-  }
-
   connectedCallback() {
-    this.render()
+    this.render();
   }
 
   render() {
@@ -12,8 +8,8 @@ class App extends HTMLElement {
       <div class="flex justify-center">
         <h1 class=" underline font-bold">My App</h1>
       </div>
-    `
+    `;
   }
 }
 
-customElements.define('app-bar', App)
+customElements.define('app-bar', App);

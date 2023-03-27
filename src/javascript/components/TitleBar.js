@@ -1,14 +1,10 @@
-class TitleBar extends HTMLElement{
-    constructor(){
-        super()
-    }
+class TitleBar extends HTMLElement {
+  connectedCallback() {
+    this.render();
+  }
 
-    connectedCallback(){
-        this.render()
-    }
-
-    render(){
-        this.innerHTML = `
+  render() {
+    this.innerHTML = `
         <div class="flex flex-col items-center text-white">
           <div class="flex items-center gap-3 ">
             <svg  class="w-20 md:w-32" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -18,8 +14,8 @@ class TitleBar extends HTMLElement{
           </div>
           <p>Expand your vocabulary, enrich your world - all in one app.</p>
         </div>
-        `
-    }
+        `;
+  }
 }
 
-customElements.define('title-bar', TitleBar)
+customElements.define('title-bar', TitleBar);
