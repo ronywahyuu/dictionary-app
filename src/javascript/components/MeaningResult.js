@@ -1,4 +1,6 @@
 import _ from 'lodash';
+// import image from '../images/notfound.svg';
+import NotFound from '../../images/notfound.svg';
 
 class MeaningResult extends HTMLElement {
   set results(results) {
@@ -9,7 +11,7 @@ class MeaningResult extends HTMLElement {
   renderEmptyPage(title, message, resolution) {
     this.innerHTML = `
         <div id="emptyPage" class=" flex flex-col justify-center   mt-16">
-          <img src="../images/notfound.svg" class="w-64 mx-auto" alt="" />
+          <img src=${NotFound} class="w-64 mx-auto" alt="" />
           <h1 class="text-center text-xl my-5">${title}</h1>
           <p class="text-center  text-gray-500">${message}</p>
           <p class="text-center text-gray-500">${resolution}</p>
@@ -28,6 +30,7 @@ class MeaningResult extends HTMLElement {
   render() {
     const definitions = this._results[0].meanings;
 
+    // ==================== Untuk keperluan belajar lodash ====================
     // const renderDefinitionsByPartOfSpeech = (partOfSpeech) => {
     //     return definitions.map(definition => {
     //         if(definition.partOfSpeech === partOfSpeech){
