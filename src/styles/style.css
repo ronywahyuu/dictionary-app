@@ -12,6 +12,7 @@ body{
 }
 
 #searchSection{
+    /* border: 1px solid red; */
     background: linear-gradient(90.12deg, rgba(20, 139, 92, 0.8) 1.31%, rgba(8, 77, 49, 0.608) 98.1%), url('../images/bg-cover.png');
     background-size: cover;
     background-position: center;
