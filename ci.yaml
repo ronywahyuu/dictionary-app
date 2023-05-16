@@ -1,0 +1,30 @@
+name : Continous Integration
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [18.x]
+    
+    steps:
+      - uses: actions/checkout@v3
+      - name: Use Node.js ${{ matrix.node-vesion }}
+        uses: actions/setup-node@v3
+        with:
+         node-version: ${{ matrix.node-version }}
+      - name: Run build
+        run: |
+          npm install 
+          npm run build
+          
+      - name: Run App
+        run: |
+          npm install
+          npm run serve
